@@ -22,13 +22,14 @@ The service provides a REST API endpoint that allows users to retrieve log lines
    node server.js
    ```
 2. **Run the tests:**  
-You may need to run using sudo and provide write access to **/var/log** in your computer. 
+You may need to run using sudo and provide write access to **/var/log** in your computer. (We have a test case that creates a 1gb file and deletes it after testing is done to test against all the constraints expected.)
 
-(We have a test case that creates a 1gb file and deletes it after testing is done to test against all the constraints expected.)
-```sudo npm run test```
+```bash
+sudo npm run test
+```
 
 3. Open in Browser: 
-```
+```bash
 localhost:3000
 ```
 4. On the UI, given three inputs - Try using 'system.log' in the filename, then, optional filter as text search and last is limit.
