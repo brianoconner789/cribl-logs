@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log API UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Log API UI</h1>
+  <label for="filename">Filename:</label>
+  <input type="text" id="filename" name="filename" placeholder="Enter filename">
+  <br>
+  <label for="filter">Filter:</label>
+  <input type="text" id="filter" name="filter" placeholder="Enter filter">
+  <br>
+  <label for="limit">Limit:</label>
+  <input type="number" id="limit" name="limit" placeholder="Enter limit">
+  <br>
+  <button onclick="fetchLogs()">Fetch Logs</button>
+  <div id="logs"></div>
+  <script src="script.js"></script>
+</body>
+</html>
