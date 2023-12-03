@@ -1,5 +1,5 @@
 const express = require('express');
-const logController = require('./src/controllers/logController');
+const logController = require('./controllers/logController');
 
 const app = express();
 const PORT = process.env.PORT || 3000;

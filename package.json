@@ -4,7 +4,12 @@
   "description": "This project helps you fetch logs from your /var/log in a memory efficient way. ",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node src/server.js",
+    "primary-secondary": "npm run primary & npm run secondary1 & npm run secondary2",
+    "primary": "node src/primary.js",
+    "secondary1": "node src/secondary1.js",
+    "secondary2": "node src/secondary2.js"
   },
   "repository": {
     "type": "git",
