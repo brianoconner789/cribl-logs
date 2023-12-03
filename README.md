@@ -19,12 +19,11 @@ The service provides a REST API endpoint that allows users to retrieve log lines
 
 ## Setup Instructions
 
-1. **Clone the Repository:**
+1. **Clone the Repository & Install Packages:**
    ```bash
    git clone git@github.com:brianoconner789/cribl-logs.git
    cd cribl-logs
    npm install
-   npm start
    ```
 2. **Run the tests:**  
 You may need to run using sudo and provide write access to **/var/log** in your computer. (We have a test case that creates a 1gb file and deletes it after testing is done to test against all the constraints expected.)
@@ -33,9 +32,10 @@ You may need to run using sudo and provide write access to **/var/log** in your 
 sudo npm run test
 ```
 
-3. Open in Browser: 
+3. **Start the server:**  
 ```bash
-localhost:3000
+npm run start
+In your browser open : localhost:3000
 ```
 4. On the UI, given three inputs - Try using 'system.log' in the filename, then, optional filter as text search and last is limit.
 
@@ -46,7 +46,7 @@ npm run primary-secondary
 ```
 6. We have integrated the same UI to the primary server, so very similarly, you should be able to use the same user interface to fetch logs. 
 ```bash
-localhost:3001
+ In your browser open : localhost:3001
 ```
 
 You should be able to input : 
